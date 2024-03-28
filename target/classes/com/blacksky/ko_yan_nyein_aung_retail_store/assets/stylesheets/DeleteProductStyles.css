@@ -1,0 +1,38 @@
+.root {
+    -fx-background-color: #F7FBFC;
+    -fx-padding: 10px;
+    -fx-font-family: Pyidaungsu;
+}
+.titleStyle {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: red;
+}
+.productNameStyle {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+.buttonStyles {
+    -fx-pref-width: 95px;
+    -fx-pref-height: 1px;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 20px;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-border-color: black;
+}
+.buttonStyles:hover {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.yesButtonStyle {
+    -fx-border-color: red;
+    -fx-text-fill: red;
+}
+.yesButtonStyle:hover {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}

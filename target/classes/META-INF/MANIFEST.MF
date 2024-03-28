@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: com.blacksky.ko_yan_nyein_aung_retail_store.ApplicationMain
+

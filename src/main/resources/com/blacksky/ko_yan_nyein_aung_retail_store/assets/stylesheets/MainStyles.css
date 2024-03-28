@@ -1,0 +1,140 @@
+/*@font-face {*/
+/*    font-family: Mustica-Pro;*/
+/*    src: url('../fonts/mustica-pro.otf');*/
+/*}*/
+.rootStyle {
+    -fx-background-color: #F7FBFC;
+    /*-fx-font-family: 'Mustica-Pro';*/
+    -fx-font-family: Pyidaungsu;
+}
+.leftSideBarStyle {
+    -fx-background-color: #EFF4F8;
+}
+
+.sideBarNumberStyles {
+    -fx-text-fill: #067cc6;
+}
+
+.topsideBarStyle {
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #E5E5E5;
+}
+.appTitleWrapper {
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #E5E5E5;
+}
+.appLabelStyle {
+    -fx-font-size: 12px;
+}
+
+.buttonStyle {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 30px;
+    -fx-background-color: white;
+    /*-fx-font-family: "Arial";*/
+    -fx-font-size: 10px;
+    /*-fx-font-weight: bold;*/
+    /*-fx-text-fill: #CA00FB;*/
+    /*-fx-border-color: #CA00FB;*/
+    -fx-border-color: #C4E7F0;
+    -fx-text-fill: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+
+}
+.buttonStyle:hover {
+    -fx-background-color: #90DCEE;
+    -fx-border-color: #90DCEE;
+    -fx-background-radius: 20px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+.searchBoxStyle {
+    -fx-background-color: white;
+    /*-fx-border-color: #CA00FB;*/
+    -fx-border-color: #ECECEC;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-font-size: 13px;
+    -fx-accent: #55C4E3;
+}
+.comboBoxStyle {
+    -fx-background-color: #EFF4F8;
+}
+.comboBoxStyle .list-cell {
+    -fx-pref-height: 35px;
+}
+.comboBoxStyle .list-cell:selected {
+    -fx-background-color: #EFF4F8;
+    -fx-text-fill: black;
+}
+.comboBoxStyle .list-cell:hover {
+    -fx-background-color: #55C4E3;
+    -fx-text-fill: white;
+}
+
+.tableTitleLabel {
+    -fx-font-size: 13px;
+}
+.productsWrapperStyle {
+    -fx-background-color: #F7FBFC;
+}
+.scrollPaneStyle {
+    -fx-background-color: #F7FBFC;
+}
+
+.scroll-bar:vertical{
+    -fx-background-color: white;
+}
+.increment-arrow, .decrement-arrow {
+    -fx-pref-width: 0px;
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #CEE2EC;
+    -fx-background-radius: 5em;
+}
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #C4D7E0;
+}
+
+.productDetailWrapperStyle {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 13px;
+}
+.productDetailTextStyle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #6C6C6C;
+    -fx-line-spacing: 1em;
+}
+
+.lowStockStyle {
+    -fx-background-color: #F04242;
+}
+.lowStockStyle .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.productDetailWrapperHoverStyle {
+    -fx-background-color: #F0F7F9;
+    -fx-text-fill: white;
+}
+
+.productDetailWrapperClickStyle {
+    -fx-border-color: #C4E7F0;
+    -fx-border-width: 3px;
+}
+
+.productDetailWrapperLowStockHoverStyle {
+    -fx-background-color: #F55A5A;
+}
+
+.productDetailWrapperLowStockClickStyle {
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+}
+

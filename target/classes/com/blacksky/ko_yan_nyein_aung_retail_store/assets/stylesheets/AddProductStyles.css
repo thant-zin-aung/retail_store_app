@@ -1,0 +1,59 @@
+.rootStyle {
+    -fx-background-color: #F7FBFC;
+    -fx-font-family: Pyidaungsu;
+    -fx-padding: 0px 20px 0 20px;
+}
+.titleStyle {
+    -fx-font-size: 20px;
+    -fx-padding: 10px 0 0px 0px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+.fieldStyle {
+    -fx-pref-width: 410px;
+    -fx-pref-height: 40px;
+    -fx-border-color: #8D8A8A;
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-padding: 0 0 0 20px;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-accent: #000000;
+}
+.fieldLabelStyle {
+    -fx-padding: 0 0 0 5px;
+    -fx-text-fill: #8D8A8A;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+.fieldWrapperStyle {
+    -fx-pref-width: 450px;
+    -fx-pref-height: 70px;
+    -fx-alignment: center-left;
+}
+.buttonWrapperStyle {
+    -fx-pref-width: 450px;
+    -fx-pref-height: 40px;
+    -fx-alignment: center-right;
+    -fx-padding: 15px 0 0 10px;
+
+}
+.errorLabelStyle {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+.buttonStyles {
+    -fx-pref-width: 90px;
+    -fx-pref-height: 30px;
+    -fx-background-color: #000000;
+    -fx-background-radius: 3px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+.buttonStyles:hover {
+    -fx-background-color: #000000;
+}

@@ -1,0 +1,37 @@
+.root {
+    -fx-background-color: #F7FBFC;
+    -fx-padding: 0 10px;
+    -fx-font-family: Pyidaungsu;
+}
+.titleStyle {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0BC5AA;
+}
+.minStockStyle {
+    -fx-background-color: white;
+    -fx-border-color: #0BC5AA;
+    -fx-border-width: 2px;
+    -fx-pref-width: 200px;
+    -fx-border-radius: 20px;
+    -fx-accent: #0BC5AA;
+    -fx-pref-height: 33px;
+    -fx-padding: 0 0 0 10px;
+
+}
+.buttonStyle {
+    -fx-font-weight: bold;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 33px;
+    -fx-background-radius: 3px;
+    -fx-background-color: #0BC5AA;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+.buttonStyle:hover {
+    -fx-effect: dropshadow(three-pass-box,#0BC5AA,10,-1,0,0);
+}
+
+.errorAlertStyle {
+    -fx-border-color: red;
+}

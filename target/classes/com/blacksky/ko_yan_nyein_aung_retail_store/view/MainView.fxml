@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<AnchorPane fx:controller="com.blacksky.ko_yan_nyein_aung_retail_store.controller.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" />-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="480.0" minWidth="852.0" prefHeight="576.0" prefWidth="1024.0" styleClass="rootStyle" stylesheets="@../assets/stylesheets/MainStyles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blacksky.ko_yan_nyein_aung_retail_store.controller.MainController">
+    <children>
+        <VBox prefHeight="576.0" prefWidth="125.0" styleClass="leftSideBarStyle" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <AnchorPane prefHeight="57.0" prefWidth="200.0" styleClass="appTitleWrapper">
+               <children>
+                        <Text fill="#06c4c6" layoutX="10.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLACKSKY">
+                            <font>
+                                <Font name="Arial Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text fill="#067cc6" layoutX="58.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="retail store">
+                            <font>
+                                <Font name="Arial Bold" size="11.0" />
+                            </font>
+                        </Text>
+               </children>
+            </AnchorPane>
+                <VBox alignment="CENTER" layoutX="10.0" layoutY="256.0" prefHeight="130.0" prefWidth="222.0" spacing="8.0">
+                    <children>
+                        <Label fx:id="totalStock" styleClass="sideBarNumberStyles" text="0">
+                            <font>
+                                <Font name="Arial" size="28.0" />
+                            </font>
+                        </Label>
+                        <Text fill="#8d8d8d" strokeType="OUTSIDE" strokeWidth="0.0" text="Total stock" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" layoutX="10.0" layoutY="349.0" prefHeight="130.0" prefWidth="222.0" spacing="8.0">
+                    <children>
+                        <Label fx:id="totalProduct" styleClass="sideBarNumberStyles" text="0">
+                            <font>
+                                <Font name="Arial" size="28.0" />
+                            </font>
+                        </Label>
+                        <Text fill="#8d8d8d" strokeType="OUTSIDE" strokeWidth="0.0" text="Total product" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" layoutX="10.0" layoutY="163.0" prefHeight="130.0" prefWidth="222.0" spacing="8.0">
+                    <children>
+                        <Label fx:id="totalCategory" styleClass="sideBarNumberStyles" text="0">
+                            <font>
+                                <Font name="Arial" size="28.0" />
+                            </font>
+                        </Label>
+                        <Text fill="#8d8d8d" strokeType="OUTSIDE" strokeWidth="0.0" text="Total category" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="130.0" prefWidth="222.0" spacing="8.0">
+                    <children>
+                        <Label fx:id="minStock" styleClass="sideBarNumberStyles" text="0">
+                            <font>
+                                <Font name="Arial" size="28.0" />
+                            </font>
+                        </Label>
+                        <Text fill="#8d8d8d" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimum stock" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_LEFT" layoutX="124.0" prefHeight="57.0" prefWidth="903.0" spacing="15.0" styleClass="topsideBarStyle" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onMouseClicked="#clickOnAddButton" prefHeight="25.0" prefWidth="80.0" styleClass="buttonStyle" text="ADD" />
+            <Button layoutX="30.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#clickOnDeleteButton" prefHeight="25.0" prefWidth="80.0" styleClass="buttonStyle" text="DELETE" />
+            <Button layoutX="145.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#clickOnUpdateButton" prefHeight="25.0" prefWidth="80.0" styleClass="buttonStyle" text="UPDATE" />
+            <Button layoutX="260.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#clickOnSetMinButton" prefHeight="25.0" prefWidth="80.0" styleClass="buttonStyle" text="SET MIN" />
+            <Pane prefHeight="56.0" prefWidth="201.0" HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="56.0" prefWidth="250.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="15.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/search.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="searchBar" onKeyTyped="#pressKeyOnSearchField" prefHeight="28.0" prefWidth="170.0" promptText="Search product" styleClass="searchBoxStyle">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+         </children></HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="740.0" layoutY="64.0" prefHeight="35.0" prefWidth="263.0" spacing="10.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="64.0">
+         <children>
+            <Text fill="#8a8a8a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="appLabelStyle" text="Category" />
+            <ComboBox fx:id="category" onAction="#clickOnCategory" prefHeight="88.0" prefWidth="170.0" styleClass="comboBoxStyle" />
+         </children>
+      </HBox>
+      <Text fill="#8a8a8a" layoutX="181.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="appLabelStyle" text="Product list table" />
+      <HBox alignment="CENTER_LEFT" layoutX="151.0" layoutY="118.0" prefHeight="30.0" prefWidth="850.0" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="23.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableTitleLabel" text="Product name" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="210.0" layoutY="10.0" prefHeight="30.0" prefWidth="160.0">
+               <children>
+                  <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableTitleLabel" text="Category" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="150.0">
+               <children>
+                  <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableTitleLabel" text="Date" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="210.0" layoutY="10.0" prefHeight="30.0" prefWidth="110.0">
+               <children>
+                  <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableTitleLabel" text="Retail price" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="337.0" layoutY="10.0" prefHeight="30.0" prefWidth="110.0">
+               <children>
+                  <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableTitleLabel" text="Wholesale price" />
+               </children>
+            </HBox>
+            <Pane prefHeight="30.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER_LEFT" layoutX="464.0" layoutY="10.0" prefHeight="30.0" prefWidth="130.0">
+               <children>
+                  <Text fill="#7c7c7c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableTitleLabel" text="Product quantity" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="21.0" fitWidth="16.0" layoutX="160.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/table-blue.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" layoutX="150.0" layoutY="160.0" prefHeight="400.0" prefWidth="850.0" styleClass="scrollPaneStyle" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="160.0">
+         <content>
+            <VBox fx:id="productsWrapper" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="850.0" styleClass="productsWrapperStyle" />
+         </content>
+      </ScrollPane>
+    </children>
+</AnchorPane>
